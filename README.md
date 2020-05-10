@@ -1,5 +1,3 @@
-This project is part of the Data Engineering Nanodegree by Udacity.
-
 
 ## Purpose
 
