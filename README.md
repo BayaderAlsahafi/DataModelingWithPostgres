@@ -36,7 +36,9 @@ SELECT name from artists WHERE artist_id IN (SELECT artist_id FROM songplays WHE
 ~~~
 SELECT COUNT(*), location FROM songplays GROUP BY LOCATION order by COUNT(*) DESC LIMIT 3
 ~~~
-> 691 | San Francisco-Oakland-Hayward, CA
+> count | location
+_____ | ____________
+691 | San Francisco-Oakland-Hayward, CA
 665	| Portland-South Portland, ME
 557	| Lansing-East Lansing, MI
 
