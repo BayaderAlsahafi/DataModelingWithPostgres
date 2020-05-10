@@ -1,18 +1,18 @@
-This project is part of the Data Engineering Nnaodegree by Udacity.
+This project is part of the Data Engineering Nanodegree by Udacity.
 
 
 ## Purpose
 
-Sparkify is a startup that have released a new music streaming application. In order to analyze their useres behaviour, they have been collecting songs and user activity data. The analytics team is mainly interested in knowing the popular songs played  among their users. In order to do this analysis easily, they want someone to develop a postgres database in order to optimize their analytical operations. 
+Sparkify is a startup that have released a new music streaming application. In order to analyze their users behavior, they have been collecting songs and user activity data. The analytics team is mainly interested in knowing the popular songs played  among their users. In order to do this analysis easily, they want someone to develop a Postgres database in order to optimize their analytical operations. 
 
 ## Schema 
 The used schema in this project is a Star Schema design.
 ![](schema.png "Star schema for the Sparkify Database")
 
 
-The main reason behind building this database model, is for the analysis team to find the songs played by the app users. Since their needs are bound to measurable metrics, which can be found in the fact table, then the star schema is the prefered design in this case. Star schemas also have an important advantage: it requires minimum amount of joins between fact and dimension tables, hence higher performance.
+The main reason behind building this database model, is for the analysis team to find the songs played by the app users. Since their needs are bound to measurable metrics, which can be found in the fact table, then the star schema is the preferred design in this case. Star schemas also have an important advantage: it requires minimum amount of joins between fact and dimension tables, hence higher performance.
 
-The ETL pipline taken in this project starts by extracting the data from song and log files, transforming them into summarized lists to fit to our schema design, and finally load them into the database tables.
+The ETL pipeline taken in this project starts by extracting the data from song and log files, transforming them into summarized lists to fit to our schema design, and finally load them into the database tables.
 
 ## Example Queries
 
@@ -53,8 +53,7 @@ Files in this repository are as the following:
     
     
 To run this project, you need to run these scripts in the terminal, in the following order:
-1. <create_tables.py>, to create the Sparkify database and all the required tables.
+1. create_tables.py, to create the Sparkify database and all the required tables.
 2. etl.py, to execute the data transformation and load operations.
 
-*Optionally*: You can run the test.ipynb in any IPython enviroment (ex: Jupyter Notebooks, Google Colab) to check if the data insertion has been executed probably.
-
+*Optionally*: You can run the test.ipynb in any IPython environment (ex: Jupyter Notebooks, Google Colab) to check if the data insertion has been executed probably.
