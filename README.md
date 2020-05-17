@@ -40,7 +40,7 @@ SELECT COUNT(*), location FROM songplays GROUP BY LOCATION ORDER BY COUNT(*) DES
 ```
 **Output:**
 ```
-691 | San Francisco-Oakland-Hayward, CA  
+691     | San Francisco-Oakland-Hayward, CA  
 665	| Portland-South Portland, ME  
 557	| Lansing-East Lansing, MI  
 ```
