@@ -15,29 +15,35 @@ The ETL pipeline taken in this project starts by extracting the data from song a
 ## Example Queries
 
 **Find all the songs played by our user:**
-~~~
+```sql
 SELECT title from songs WHERE song_id IN (SELECT song_id FROM songplays WHERE song_id != 'None') 
-~~~
+```
 
 **Output:**
-> Setanta matins
+```
+Setanta matins
+```
 
 **Find all the artist whom their songs are played by our users:**
-~~~
+```sql
 SELECT name from artists WHERE artist_id IN (SELECT artist_id FROM songplays WHERE artist_id != 'None')
-~~~
+```
 
 **Output:**
-> Elena
+```
+Elena
+```
     
 **Find the top 3 locations using our app:**
-~~~
-SELECT COUNT(*), location FROM songplays GROUP BY LOCATION order by COUNT(*) DESC LIMIT 3
-~~~
-> 691 | San Francisco-Oakland-Hayward, CA  
+```sql
+SELECT COUNT(*), location FROM songplays GROUP BY LOCATION ORDER BY COUNT(*) DESC LIMIT 3
+```
+**Output:**
+```
+691 | San Francisco-Oakland-Hayward, CA  
 665	| Portland-South Portland, ME  
 557	| Lansing-East Lansing, MI  
-
+```
 
 ## Project Files
 
