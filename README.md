@@ -48,12 +48,12 @@ SELECT COUNT(*), location FROM songplays GROUP BY LOCATION ORDER BY COUNT(*) DES
 ## Project Files
 
 Files in this repository are as the following:
-* sql_queries.py: Contains all the drop, create, insert and select queries.
-* create_tables.py: Establish a connection to the database and create the required tables.
-* etl.ipynb: Perform all the ETL processes on a subset of the data. (This file is mainly for trial and error purposes).
-* etl.py: Perform all the ETL processes.
-* test.ipynb: Perform data selection to check if the insertion has been done properly.
-* schema.png: Contains a drawing of the schema design.
+* **sql_queries.py:** Contains all the drop, create, insert and select queries.
+* **create_tables.py:** Establish a connection to the database and create the required tables.
+* **etl.ipynb:** Perform all the ETL processes on a subset of the data. (This file is mainly for trial and error purposes).
+* **etl.py:** Perform all the ETL processes.
+* **test.ipynb:** Perform data selection to check if the insertion has been done properly.
+* **schema.png:** Contains a drawing of the schema design.
     
     
 To run this project, you need to run these scripts in the terminal, in the following order:
